@@ -1,0 +1,28 @@
+@import url(../fonts/font-awesome/webfonts/all.min.css);
+
+@font-face {
+  font-family: "Heebo";
+  src: url('../fonts/Heebo.woff') format ('woff');
+}
+
+@font-face {
+  font-family: "Spotnik";
+  src: url('../fonts/SPOTNIK.woff') format ('woff');
+}
+
+@font-face {
+  font-family: "Spotnik";
+  src: url('../fonts/SPOTNIKBold.woff') format ('woff');
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Spotnik';
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
