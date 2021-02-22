@@ -1,4 +1,4 @@
-@import url(../fonts/font-awesome/webfonts/all.min.css);
+@import url('../fonts/font-awesome/webfonts/all.min.css');
 
 @font-face {
   font-family: "Heebo";
@@ -16,13 +16,52 @@
   font-weight: bold;
 }
 
-h1 {
+h1,
+h2 {
   font-family: 'Spotnik';
 }
 
-
+#hero {
+  background-image: url('/img/code-bg.jpg');
+  background-size: cover;
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-2xl;
+    @apply py-3;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-xl;
+    @apply py-3;
+    @apply font-bold;
+  }
+  p {
+    @apply my-2;
+  }
+  .btn {
+  @apply text-xl; 
+  @apply py-2;
+  @apply px-4;
+  @apply my-3;
+  @apply rounded;
+  @apply bg-purple;
+  @apply hover:bg-purple-dark;
+  @apply text-white;
+  @apply inline-block;
+  }
+  .section-content {
+    @apply w-11/12 mx-auto;
+    @apply py-2;
+  }
+  .divider {
+    @apply border-red;
+    @apply border-t-2;
+    @apply h-7; 
+  }
+}

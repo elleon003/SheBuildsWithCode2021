@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/elleon003/SheBuildsWithCode2021#readme",
   "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
     "tailwindcss": "^2.0.3"
