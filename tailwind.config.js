@@ -43,7 +43,8 @@ module.exports = {
       fontStyle: ['hover'],
       display: ['dark'],
       borderWidth: ['active', 'focus'],
-      borderColor: ['active', 'focus']
+      borderColor: ['active', 'focus'],
+      margin: ['dark']
     },
   },
   plugins: [

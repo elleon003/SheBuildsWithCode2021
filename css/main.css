@@ -22,7 +22,7 @@ h2 {
 }
 
 #hero {
-  background-image: url('../img/code-bg.jpg');
+  background-image: url('img/code-bg.jpg');
   background-size: cover;
 }
 
@@ -32,16 +32,17 @@ h2 {
 
 @layer base {
   h1 {
-    @apply text-2xl;
+    @apply text-3xl;
     @apply py-3;
     @apply font-bold;
   }
   h2 {
-    @apply text-xl;
+    @apply text-2xl;
     @apply py-3;
     @apply font-bold;
   }
   p {
+    @apply text-xl;
     @apply my-2;
   }
   .btn {
