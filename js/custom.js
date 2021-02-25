@@ -1,8 +1,10 @@
 let menuButton = document.getElementById('menuButton')
 menuButton.addEventListener('click', showMenu, false)
 
+let closeButton = document.getElementById('closeButton')
+closeButton.addEventListener('click', hideMenu, false)
+
 let mobileMenu = document.getElementById('menu')
-mobileMenu.addEventListener('click', hideMenu, false)
 
 function showMenu(e) {
   mobileMenu.classList.add('show');

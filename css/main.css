@@ -20,7 +20,6 @@
   }
 }
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,21 +27,27 @@
 @layer base {
   @font-face {
     font-family: "Heebo";
-    src: url('../fonts/Heebo.woff') format ('woff'),
-         url('../fonts/Heebo.ttf') format ('truetype');
+    src: url('../fonts/Heebo.woff') format('woff'),
+         url('../fonts/Heebo.woff2') format('woff2'),
+         url('../fonts/Heebo.ttf') format('truetype');
     font-style:normal;
+    font-display: swap;
   }
   @font-face {
     font-family: "Spotnik";
-    src: url('../fonts/SPOTNIK.woff') format ('woff'),
-         url('../fonts/SPOTNIK.ttf') format ('truetype');
+    src: url('../fonts/SPOTNIK.woff') format('woff'),
+         url('../fonts/SPOTNIK.woff2') format('woff2'),
+         url('../fonts/SPOTNIK.ttf') format('truetype');
     font-style:normal;
+    font-display: swap;
   }
   @font-face {
     font-family: "Spotnik";
-    src: url('../fonts/SPOTNIKBold.woff') format ('woff'),
-         url('../fonts/SPOTNIKBold.ttf') format ('truetype');
+    src: url('../fonts/SPOTNIKBold.woff') format('woff'),
+         url('../fonts/SPOTNIKBold.woff2') format('woff2'),
+         url('../fonts/SPOTNIKBold.ttf') format('truetype');
     font-weight: 700;
+    font-display: swap;
   }
   h1 {
     font-family: 'Spotnik'!important;
