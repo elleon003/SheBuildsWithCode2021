@@ -8,13 +8,32 @@
   <link rel="stylesheet" href="css/output.css">
 </head>
 <body>
-  <div class='container h-auto dark:bg-black dark:text-white'>
+  <div class='container h-auto bg-white dark:bg-black dark:text-white fixed'>
     <header>
-      <nav>
+      <nav class='container lg:p-5 flex lg:justify-between'>
+        <i class='fas fa-bars fa-2x pt-3 pl-1 lg:hidden' id='menuButton'></i>
         <div id='logo'>
-          <h1 class='text-center'>She Builds With Code</h1>
+          <a href='/'><h1 class='text-center'>She Builds With Code</h1></a>
         </div>
-        <div id='menu'></div>
+        <div id='menu' class='flex flex-col lg:flex-row text-4xl bg-white dark:bg-black'>
+          <i class='far fa-window-close fa-lg pt-4 pr-3 self-end lg:hidden' id="closeButton"></i>
+          <a class='pt-4 pl-3 lg:pl-0 lg:pr-5 hover:underline lg:text-xl' href='/'>
+            <i class='fas fa-home pr-1 lg:pr-0'></i>
+            Home
+          </a>
+          <a class='pt-4 pl-3 lg:pl-0 lg:pr-5 hover:underline lg:text-xl' href='about'>
+            <i class='fas fa-info-circle pr-1 lg:pr-0'></i>
+            About
+          </a>
+          <a class='pt-4 pl-3 lg:pl-0 lg:pr-5 hover:underline lg:text-xl' href='episodes'>
+            <i class='fas fa-podcast pr-2 lg:pr-0'></i>
+            Episodes
+          </a>
+          <a class='pt-4 pl-3 lg:pl-0 lg:pr-5 hover:underline lg:text-xl' href='contact'>
+            <i class='fas fa-envelope-open-text pr-1 lg:pr-0'></i>
+            Contact Me
+          </a>
+        </div>
         <!-- @TODO - FULL NAVBAR -->
       </nav>
     </header>
@@ -24,7 +43,7 @@
     <div class='container'>
 
       <!-- HERO -->
-      <section id="hero" class='flex flex-col justify-center items-center'>
+      <section id="hero" class='flex flex-col justify-center items-center pt-24'>
         <div class='section-content'>
           <p class='text-2xl font-bold'>The podcast helping you get out of tutorial hell.</p>
         <a class='btn' href='@TODO'>Subscribe</a>
@@ -36,7 +55,7 @@
         <div class='section-content'>
           <h2>Latest Episode</h2>
         <hr class='divider'>
-        <div id='buzzsprout-small-player-1214327-limit-5'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1214327.js?player=small&limit=1&container_id=buzzsprout-small-player-1214327-limit-5'></script>
+        <!-- <div id='buzzsprout-small-player-1214327-limit-5'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1214327.js?player=small&limit=1&container_id=buzzsprout-small-player-1214327-limit-5'></script> -->
         <a class='btn' href='@TODO'>Listen to More Episodes</a>
         </div>
       </section>
@@ -105,5 +124,8 @@
       </section>
     </div>
   </footer>
+
+  <!-- CUSTOM JS -->
+  <script src="js/custom.js"></script>
 </body>
 </html>

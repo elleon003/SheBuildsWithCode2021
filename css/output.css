@@ -1,33 +1,24 @@
 @import url('../fonts/font-awesome/webfonts/all.min.css');
 
-@font-face {
-  font-family: "Heebo";
-
-  src: url('../fonts/Heebo.woff') format ('woff');
-}
-
-@font-face {
-  font-family: "Spotnik";
-
-  src: url('../fonts/SPOTNIK.woff') format ('woff');
-}
-
-@font-face {
-  font-family: "Spotnik";
-
-  src: url('../fonts/SPOTNIKBold.woff') format ('woff');
-
-  font-weight: bold;
-}
-
-h1,
-h2 {
-  font-family: 'Spotnik';
-}
-
 #hero {
-  background-image: url('../img/code-bg.jpg');
+  background-image: url('/img/code-bg.jpg');
   background-size: cover;
+}
+
+@media all and (max-width:1023px) {
+  #menu{
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    left: 0;
+    top: 0;
+    transform: translate3d(-100vw, 0, 0);
+    transition: transform .3s cubic-bezier(0, .52, 0, 1)
+  }
+
+  #menu.show {
+    transform: translate3d(0vw, 0, 0);
+  }
 }
 
 /*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
@@ -780,7 +771,35 @@ select{
   outline: 1px auto -webkit-focus-ring-color;
 }
 
+@font-face {
+  font-family: "Heebo";
+
+  src: url('../fonts/Heebo.woff') format ('woff'),
+         url('../fonts/Heebo.ttf') format ('truetype');
+
+  font-style:normal;
+}
+
+@font-face {
+  font-family: "Spotnik";
+
+  src: url('../fonts/SPOTNIK.woff') format ('woff'),
+         url('../fonts/SPOTNIK.ttf') format ('truetype');
+
+  font-style:normal;
+}
+
+@font-face {
+  font-family: "Spotnik";
+
+  src: url('../fonts/SPOTNIKBold.woff') format ('woff'),
+         url('../fonts/SPOTNIKBold.ttf') format ('truetype');
+
+  font-weight: 700;
+}
+
 h1 {
+  font-family: 'Spotnik'!important;
   font-size: 1.875rem;
   line-height: 2.25rem;
   padding-top: 0.75rem;
@@ -789,6 +808,7 @@ h1 {
 }
 
 h2 {
+  font-family: 'Spotnik' !important;
   font-size: 1.5rem;
   line-height: 2rem;
   padding-top: 0.75rem;
@@ -6750,6 +6770,10 @@ p {
 }
 
 .font-sans{
+  font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-body{
   font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -30571,6 +30595,10 @@ p {
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
   }
 
+  .sm\:font-body{
+    font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
+  }
+
   .sm\:font-thin{
     font-weight: 100;
   }
@@ -54308,6 +54336,10 @@ p {
   }
 
   .md\:font-sans{
+    font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .md\:font-body{
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
   }
 
@@ -78051,6 +78083,10 @@ p {
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
   }
 
+  .lg\:font-body{
+    font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
+  }
+
   .lg\:font-thin{
     font-weight: 100;
   }
@@ -101791,6 +101827,10 @@ p {
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
   }
 
+  .xl\:font-body{
+    font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
+  }
+
   .xl\:font-thin{
     font-weight: 100;
   }
@@ -125528,6 +125568,10 @@ p {
   }
 
   .\32xl\:font-sans{
+    font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .\32xl\:font-body{
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
   }
 

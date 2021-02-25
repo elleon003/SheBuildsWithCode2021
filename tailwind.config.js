@@ -5,7 +5,8 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'sans': ['Heebo', 'ui-sans-serif', 'system-ui', 'sans-serif']
+      'sans': ['Heebo', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      'body': ['Heebo', 'ui-sans-serif', 'system-ui', 'sans-serif']
     },
     colors: {
       black: {

@@ -1,42 +1,57 @@
 @import url('../fonts/font-awesome/webfonts/all.min.css');
 
-@font-face {
-  font-family: "Heebo";
-  src: url('../fonts/Heebo.woff') format ('woff');
-}
-
-@font-face {
-  font-family: "Spotnik";
-  src: url('../fonts/SPOTNIK.woff') format ('woff');
-}
-
-@font-face {
-  font-family: "Spotnik";
-  src: url('../fonts/SPOTNIKBold.woff') format ('woff');
-  font-weight: bold;
-}
-
-h1,
-h2 {
-  font-family: 'Spotnik';
-}
-
 #hero {
-  background-image: url('img/code-bg.jpg');
+  background-image: url('/img/code-bg.jpg');
   background-size: cover;
 }
+
+@media all and (max-width:1023px) {
+  #menu{
+    position: fixed;
+    width: 100vw;
+    height:100vh;
+    left: 0;
+    top: 0;
+    transform: translate3d(-100vw, 0, 0);
+    transition: transform .3s cubic-bezier(0, .52, 0, 1)
+  }
+  #menu.show {
+    transform: translate3d(0vw, 0, 0);
+  }
+}
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "Heebo";
+    src: url('../fonts/Heebo.woff') format ('woff'),
+         url('../fonts/Heebo.ttf') format ('truetype');
+    font-style:normal;
+  }
+  @font-face {
+    font-family: "Spotnik";
+    src: url('../fonts/SPOTNIK.woff') format ('woff'),
+         url('../fonts/SPOTNIK.ttf') format ('truetype');
+    font-style:normal;
+  }
+  @font-face {
+    font-family: "Spotnik";
+    src: url('../fonts/SPOTNIKBold.woff') format ('woff'),
+         url('../fonts/SPOTNIKBold.ttf') format ('truetype');
+    font-weight: 700;
+  }
   h1 {
+    font-family: 'Spotnik'!important;
     @apply text-3xl;
     @apply py-3;
     @apply font-bold;
   }
   h2 {
+    font-family: 'Spotnik' !important;
     @apply text-2xl;
     @apply py-3;
     @apply font-bold;
