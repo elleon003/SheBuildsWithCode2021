@@ -48,7 +48,9 @@ module.exports = {
       display: ['dark'],
       borderWidth: ['active', 'focus'],
       borderColor: ['active', 'focus'],
-      margin: ['dark']
+      margin: ['dark'],
+      transform: ['hover', 'focus'],
+      transitionProperty: ['hover', 'focus']
     },
   },
   plugins: [
