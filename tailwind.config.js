@@ -33,6 +33,9 @@ module.exports = {
         dark: '#D09088'
       }
     },
+    boxShadow: {
+     '3xl':'10px 10px 10px rgba(0, 0, 0, 0.3)',
+    },
     container: {
       center: true,
     },

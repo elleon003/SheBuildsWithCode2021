@@ -1,8 +1,10 @@
 let menuButton = document.getElementById('menuButton')
 menuButton.addEventListener('click', showMenu, false)
+menuButton.addEventListener('keyup', showMenu, false)
 
 let closeButton = document.getElementById('closeButton')
 closeButton.addEventListener('click', hideMenu, false)
+closeButton.addEventListener('keyup', hideMenu, false)
 
 let mobileMenu = document.getElementById('menu')
 
