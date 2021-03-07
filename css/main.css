@@ -3,6 +3,8 @@
 #hero {
   background-image: url('/img/code-bg.jpg');
   background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
 }
 
 .tabset>div>section,
