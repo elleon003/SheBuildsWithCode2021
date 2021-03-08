@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwindcss build css/main.css -o css/output.css"
+    "build:css": "tailwindcss build version1/css/main.css -o version1/css/output.css",
+    "build:hugocss": "tailwindcss build version1/css/main.css -o assets/css/main.css"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "@tailwindcss/forms": "^0.2.1",
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.3"
   }
 }
