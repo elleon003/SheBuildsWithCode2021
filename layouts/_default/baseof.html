@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class='h-full'>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ .Title }}</title>
+  <title>{{ block "title" . }}
+    {{ .Site.Title }}
+  {{ end }}</title>
 
   {{ $styles := resources.Get "css/main.css"}}
   {{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }}
@@ -15,9 +17,69 @@
 
   <link href="{{ $styles.Permalink }}" rel="stylesheet" />
 </head>
-<body>
+<body class='flex flex-col h-full'>
+  <div class='w-screen h-auto bg-white dark:bg-black dark:text-white fixed z-50'>
+    <header>
+      <nav class='container md:py-3 lg:p-5 flex lg:justify-between' role='navigation'>
 
-  {{ block "main" . }}{{ end }}
-  
+        <a href='#' class='lg:hidden'><i class='fas fa-bars fa-2x pt-3 pl-3' id='menuButton' aria-label="Open the menu" aria-controls='menu'></i></a>
+
+        <div id='logo' class='ml-3'>
+          <a href='@TODO'><h1>She Builds With Code</h1></a>
+        </div>
+
+        <div id='menu' class='flex flex-col lg:flex-row text-4xl bg-white dark:bg-black'>
+          
+          <a href='#' class='lg:hidden self-end'><i class='far fa-window-close fa-lg pt-4 pr-3' id="closeButton" aria-label="Close the menu"></i></a>
+
+          <a class='pt-4 pl-3 lg:pl-0 lg:pr-5 hover:underline lg:text-xl' href='@TODO'>
+            <i class='fas fa-home pr-1 lg:pr-0'></i>
+            Home
+          </a>
+          <a class='pt-4 pl-3 lg:pl-0 lg:pr-5 hover:underline lg:text-xl' href='@TODO'>
+            <i class='fas fa-info-circle pr-1 lg:pr-0'></i>
+            About
+          </a>
+          <a class='pt-4 pl-3 lg:pl-0 lg:pr-5 hover:underline lg:text-xl' href='@TODO'>
+            <i class='fas fa-podcast pr-2 lg:pr-0'></i>
+            Episodes
+          </a>
+          <a class='pt-4 pl-3 lg:pl-0 lg:pr-5 hover:underline lg:text-xl' href='@TODO'>
+            <i class='fas fa-envelope-open-text pr-1 lg:pr-0'></i>
+            Contact Me
+          </a>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <main class='flex-shrink-0 mt-24  md:mt-14'>
+    <div class='container'>
+
+    {{ block "main" . }}{{ end }}
+
+    </div>
+  </main>
+
+  <footer class='mt-auto'>
+    <div class='bg-grey text-white py-4'>
+      <section class='section-content flex justify-between lg:w-3/4'>
+        <div class='flex flex-col'>
+          <p><a class='text-white hover:underline' href="index.html">She Builds With Code</a> &copy;2021</p>
+          <a href="@TODO" class="text-white hover:underline col-span-2">Privacy Policy</a>
+          <a href="@TODO" class="text-white hover:underline col-span-2">Newsletter</a>
+          <a href="@TODO" class="text-white hover:underline col-span-2">Contact Me</a>
+        </div>
+        <div class="flex flex-col">
+          <a href="https://twitter.com/SheBuildswCode" aria-label="She Builds With Code on Twitter" class=""><i class="fab fa-twitter-square fa-3x"></i></a>
+          <a href="https://facebook.com/SheBuildsWithCode" aria-label="She Builds With Code on Facebook"><i class="fab fa-facebook-square fa-3x"></i></a>
+        </div>
+          
+      </section>
+    </div>
+  </footer>
+
+  <script defer language="javascript" type="text/javascript"  src='{{ "/js/custom.js" | urlize | relURL }}'></script>
+
 </body>
 </html>

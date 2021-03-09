@@ -1,7 +1,7 @@
-@import url('../fonts/font-awesome/webfonts/all.min.css');
+@import url('../fonts/webfonts/all.min.css');
 
 #hero {
-  background-image: url('/img/code-bg.jpg');
+  background-image: url('../img/code-bg.jpg');
   background-size: cover;
   background-repeat:no-repeat;
   background-position: center;
@@ -110,152 +110,8 @@
 
   .btn {
     @apply text-xl;
-    @apply py-2;
-    @apply px-4;
-    @apply my-3;
-    @apply rounded;
-    @apply bg-purple;
-    @apply hover:bg-purple-dark;
-    @apply text-white;
-    @apply inline-block;
-  }
-
-  .section-content {
-    @apply w-11/12 mx-auto;
-    @apply py-2;
-  }
-
-  .divider {
-    @apply border-red;
-    @apply border-t-2;
-    @apply h-7;
-  }
-
-  .tabset>input:nth-child(1):focus~ul li:nth-child(1) label,
-  .tabset>input:nth-child(2):focus~ul li:nth-child(2) label {
-    @apply underline;
-  }
-
-  .tabset>input:nth-child(1):checked~ul li:nth-child(1) label,
-  .tabset>input:nth-child(2):checked~ul li:nth-child(2) label {
-    @apply border-b-4;
-    @apply border-red;
-    @apply font-bold;
-  }
-}@import url('../fonts/font-awesome/webfonts/all.min.css');
-
-#hero {
-  background-image: url('/img/code-bg.jpg');
-  background-size: cover;
-  background-repeat:no-repeat;
-  background-position: center;
-}
-
-.tabset>div>section,
-.tabset>div>section h3 {
-  position: absolute;
-  top: -999em;
-  left: -999em;
-}
-
-.tabset>div>section {
-  padding: 1em 1em 0;
-}
-
-.tabset>input:nth-child(1):checked~div>section:nth-child(1),
-.tabset>input:nth-child(2):checked~div>section:nth-child(2) {
-  position: static;
-}
-
-.tabset>ul label {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@media all and (max-width:1023px) {
-  #menu {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    visibility: hidden;
-    transform: translate3d(-100vw, 0, 0);
-    transition: transform .3s cubic-bezier(0, .52, 0, 1)
-  }
-
-  #menu.show {
-    transform: translate3d(0vw, 0, 0);
-    visibility: visible;
-  }
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  @font-face {
-    font-family: "Heebo";
-    src: url('../fonts/Heebo.woff') format('woff'),
-      url('../fonts/Heebo.woff2') format('woff2'),
-      url('../fonts/Heebo.ttf') format('truetype');
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Spotnik";
-    src: url('../fonts/SPOTNIK.woff') format('woff'),
-      url('../fonts/SPOTNIK.woff2') format('woff2'),
-      url('../fonts/SPOTNIK.ttf') format('truetype');
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Spotnik";
-    src: url('../fonts/SPOTNIKBold.woff') format('woff'),
-      url('../fonts/SPOTNIKBold.woff2') format('woff2'),
-      url('../fonts/SPOTNIKBold.ttf') format('truetype');
-    font-weight: 700;
-    font-display: swap;
-  }
-
-  h1 {
-    font-family: 'Spotnik' !important;
-    @apply text-3xl;
-    @apply py-3;
-    @apply font-bold;
-  }
-
-  h2 {
-    font-family: 'Spotnik' !important;
-    @apply text-2xl;
-    @apply py-3;
-    @apply font-bold;
-  }
-
-  h3 {
-    font-family: 'Spotnik' !important;
-    @apply text-xl;
-    @apply py-2;
-    @apply font-bold;
-  }
-
-  p {
-    @apply text-xl;
-    @apply my-2;
-  }
-
-  .btn {
-    @apply text-xl;
-    @apply py-2;
-    @apply px-4;
+    @apply py-4;
+    @apply px-6;
     @apply my-3;
     @apply rounded;
     @apply bg-purple;
@@ -287,3 +143,5 @@
     @apply font-bold;
   }
 }
+
+

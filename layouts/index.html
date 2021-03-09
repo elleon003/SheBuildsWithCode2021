@@ -1,5 +1,65 @@
 {{ define "main" }}
 
-  <h1 class='container mx-auto mt-5 text-3xl'>Hello from the other side!</h1>
+  <!-- HERO -->
+  <section id="hero" class='flex flex-col justify-center items-center pt-6 pb-8 md:py-12 lg:py-36'>
+    <div class='section-content flex flex-col md:items-center'>
+      <p class='text-2xl font-bold lg:text-4xl lg:pt-12'>The podcast helping you get out of tutorial hell.</p>
+    <a class='btn text-center lg:text-2xl' href='@TODO'>Subscribe</a>
+    </div>
+  </section>
 
+  <!-- LATEST EPISODE -->
+  <section id="latest-episode" class="bg-pink dark:bg-pink-dark flex flex-col justify-center items-center lg:py-8">
+    <div class='section-content'>
+      <h2>Latest Episode</h2>
+    <hr class='divider'>
+    <div id='buzzsprout-small-player-1214327-limit-5'></div><script type='text/javascript' charset='utf-8' src='https://www.buzzsprout.com/1214327.js?player=small&limit=1&container_id=buzzsprout-small-player-1214327-limit-5'></script>
+    <a class='btn' href='@TODO'>Listen to More Episodes</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class='dark:bg-black dark:text-white flex flex-col justify-center items-center lg:py-8'>
+    <div class='section-content'>
+      <h2>About This Podcast</h2>
+      <hr class='divider'>
+      <p>@TODO - FIND SUMMARY FROM ABOUT PAGE</p>
+      <a class='btn' href='@TODO'>Read More</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class='bg-pink dark:bg-pink-dark lg:py-8'>
+    <div class="section-content">
+      <h2>Contact Me</h2>
+      <hr class='divider'>
+      <p>@TODO - FIND SUMMARY FROM CONTACT PAGE
+      </p>
+      <a class='btn' href="@TODO">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="follow" class='dark:bg-black dark:text-white lg:py-8'>
+    <div class='section-content'>
+      <h2>Follow The Podcast</h2>
+      <hr class='divider'>
+      <div class="grid grid-cols-2 gap-3 lg:justify-items-center">
+        <!-- NORMAL THEME BADGES -->
+        <a href="https://open.spotify.com/show/7Jp9Vj3b7DT6vyeljjvPV6" target="_blank"><img class="dark:hidden focus:border-4 focus:border-red" src='img/badges/light/Spotify.png' alt='Listen on Spotify'></a>
+        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMjE0MzI3LnJzcw==" target="_blank"><img class="dark:hidden focus:border-4 focus:border-red" src='img/badges/light/GooglePodcasts.png'
+            alt='Listen on Google Podcasts'></a>
+        <a href="https://podcasts.apple.com/us/podcast/she-builds-with-code/id1549491879" target="_blank"><img class="dark:hidden focus:border-4 focus:border-red" src='img/badges/light/ApplePodcasts.png'
+            alt='Listen on Apple Podcasts'></a>
+        <a href="https://feeds.buzzsprout.com/1214327.rss" target="_blank"><img class="dark:hidden focus:border-4 focus:border-red" src='img/badges/light/RSSFeed.png'
+            alt='Import the Podcast RSS Feed'></a>  
+
+        <!-- DARK THEME BADGES -->
+        <a href="https://open.spotify.com/show/7Jp9Vj3b7DT6vyeljjvPV6" target="_blank"><img class="hidden dark:block focus:border-4 focus:border-red" src='img/badges/dark/Spotify.png' alt='Listen on Spotify'></a>
+        <a href="https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5idXp6c3Byb3V0LmNvbS8xMjE0MzI3LnJzcw==" target="_blank"><img class="hidden dark:block focus:border-4 focus:border-red" src='img/badges/dark/GooglePodcasts.png' alt='Listen on Google Podcasts'></a>
+        <a href="https://podcasts.apple.com/us/podcast/she-builds-with-code/id1549491879" target="_blank"><img class="hidden dark:block focus:border-4 focus:border-red" src='img/badges/dark/ApplePodcasts.png' alt='Listen on Apple Podcasts'></a>
+        <a href="https://feeds.buzzsprout.com/1214327.rss" target="_blank"><img class="hidden dark:block focus:border-4 focus:border-red" src='img/badges/dark/RSSFeed.png' alt='Import the Podcast RSS Feed'></a>
+        <div class='dark:mb-10'></div>
+      </div>
+    </div>
+  </section>
 {{ end }}
