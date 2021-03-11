@@ -6840,6 +6840,10 @@ p {
   font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
 }
 
+.font-display{
+  font-family: Spotnik;
+}
+
 .font-thin{
   font-weight: 100;
 }
@@ -30619,6 +30623,10 @@ p {
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
   }
 
+  .sm\:font-display{
+    font-family: Spotnik;
+  }
+
   .sm\:font-thin{
     font-weight: 100;
   }
@@ -54318,6 +54326,10 @@ p {
 
   .md\:font-body{
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .md\:font-display{
+    font-family: Spotnik;
   }
 
   .md\:font-thin{
@@ -78021,6 +78033,10 @@ p {
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
   }
 
+  .lg\:font-display{
+    font-family: Spotnik;
+  }
+
   .lg\:font-thin{
     font-weight: 100;
   }
@@ -101722,6 +101738,10 @@ p {
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
   }
 
+  .xl\:font-display{
+    font-family: Spotnik;
+  }
+
   .xl\:font-thin{
     font-weight: 100;
   }
@@ -125421,6 +125441,10 @@ p {
 
   .\32xl\:font-body{
     font-family: Heebo, ui-sans-serif, system-ui, sans-serif;
+  }
+
+  .\32xl\:font-display{
+    font-family: Spotnik;
   }
 
   .\32xl\:font-thin{

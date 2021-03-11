@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<section class='flex flex-col justify-center items-center pt-24'>
+  <div class='section-content'>
+    <h2 class='text-center'>{{ .Title }}</h2>
+    <hr class='divider'>
+
+    {{ .Content }}
+    
+  </div>
+</section>
+{{- partial "aside.html" . -}}
+
+{{ end }}

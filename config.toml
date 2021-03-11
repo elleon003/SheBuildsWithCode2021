@@ -1,3 +1,4 @@
 baseURL = "https://shebuildswithcode.com/"
 languageCode = "en-us"
 title = "She Builds With Code"
+theme = "exampleTheme"

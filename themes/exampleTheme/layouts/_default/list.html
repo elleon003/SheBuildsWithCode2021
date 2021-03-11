@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<section class='flex flex-col justify-center items-center pt-4 md:pt-12 lg:pt-14'>
+  <div class='section-content'>
+    <h2 class='text-center'>{{ .Title }}</h2>
+    <hr class='divider'>
+    <div class='lg:w-3/4 lg:mx-auto'>
+
+    {{ range .Pages }}
+      <div class='shadow-3xl p-5 my-4'>
+        <a href="{{ .RelPermalink }}" class="hover:underline hover:font-bold"><h3>{{ .Title }}</h3></a>
+        <p class='text-red'>Feb 16, 2021 / 28 Mins.</p>
+        <p>This is where the description of the episode goes</p>
+      </div>
+    {{ end }}
+    </div>
+  </div>
+</section>
+
+  {{- partial "aside.html" }}
+
+{{ end }}

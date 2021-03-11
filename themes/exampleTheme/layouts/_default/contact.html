@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class='flex flex-col justify-center items-center pt-4 md:pt-12 lg:pt-14'>
+  <div class='section-content'>
+    <h2 class='text-center'>{{ .Title }}</h2>
+    <hr class='divider'>
+    {{ .Content }}
+    <h3 class='mt-4'>Email</h3>
+    <form 
+      action="https://usebasin.com/f/cd62124fbaa7"
+      method='POST'
+      role='form'
+      class='flex flex-col justify-between mb-8 lg:w-3/4 lg:mx-auto'>
+      <label for='name' class='mt-4'>Name*</label>
+      <input type='text' name='name' id='name' required>
+      <label for='email' class='mt-4'>Email*</label>
+      <input type='email' name='email' id='email' required>
+      <label for='message' class='mt-4'>Message*</label>
+      <textarea></textarea>
+      <input type='hidden' name='_friendly'>
+      <input type='submit' class='btn md:self-start' value='Email Me!'>
+    </form>
+    <h3 class='mt-4'>Voice</h3>
+    <div class='flex flex-col mb-8 lg:w-3/4 lg:mx-auto'>
+      <p>Send me a voice message, right from your device!</p>
+      <a href='https://www.speakpipe.com/shebuildswithcode' target="_blank" rel="noopener noreferrer" class='btn text-center md:self-start'>Send a Voice Message!</a>
+    </div>
+  </div>
+</section>
+
+  {{- partial "aside.html" }}
+{{ end }}

@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['Heebo', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-      'body': ['Heebo', 'ui-sans-serif', 'system-ui', 'sans-serif']
+      'body': ['Heebo', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      'display': ['Spotnik']
     },
     colors: {
       black: {
