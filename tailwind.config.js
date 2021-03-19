@@ -32,6 +32,7 @@ module.exports = {
         dark: '#4D1C75'
       },
       pink: {
+        light: '#F4E5E4',
         DEFAULT: '#F1DEDC',
         dark: '#D09088'
       }

@@ -2,3 +2,8 @@ baseURL = "https://shebuildswithcode.com/"
 languageCode = "en-us"
 title = "She Builds With Code"
 theme = "exampleTheme"
+
+[params]
+  description = "Get out of tutorial hell! Follow freelance web developer Noelle Anderson as she shares her journey from \"how do you start an HTML doc?\" to \"hey, let's build a blog from scratch!\" Filled with projects, laughs, and a few tears, this podcast is designed to help you on your coding journey, get past imposter syndrome, and gain the confidence to become the coder you want to be."
+
+  buzz_url = "https://www.buzzsprout.com/api/1214327/episodes.json?api_token=8be0378b3189a665e1b1503988e1d4a7"

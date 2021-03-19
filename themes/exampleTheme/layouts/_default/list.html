@@ -6,14 +6,15 @@
     <hr class='divider'>
     <div class='lg:w-3/4 lg:mx-auto'>
 
-    {{ range .Pages }}
+    {{ range (.Paginator 5).Pages }}
       <div class='shadow-3xl p-5 my-4'>
-        <a href="{{ .RelPermalink }}" class="hover:underline hover:font-bold"><h3>{{ .Title }}</h3></a>
-        <p class='text-red'>Feb 16, 2021 / 28 Mins.</p>
-        <p>This is where the description of the episode goes</p>
+        <a href="{{ .RelPermalink }}" class="text-black hover:text-black hover:underline hover:font-bold"><h3>{{ .Title }}</h3></a>
+        <p class='text-red'>{{ .Date.Format "Jan 2, 2006" }} / {{ .Params.duration }} mins</p>
+        <p>{{ .Description }}</p>
       </div>
     {{ end }}
     </div>
+    {{ template "_internal/pagination.html" . }}
   </div>
 </section>
 

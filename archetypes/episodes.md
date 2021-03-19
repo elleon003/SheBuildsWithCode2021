@@ -1,10 +1,12 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+date: 2021-03-18
 draft: false
-description: "THIS IS WHERE THE DESCRIPTION GOES"
+id: ""
+audio_url: ""
+description: ""
+duration: ""
+showNotes: ""
 ---
-SHOW NOTES
-
 
 TRANSCRIPT

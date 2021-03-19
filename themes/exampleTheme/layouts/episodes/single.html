@@ -1,22 +1,19 @@
 {{ define "main" }}
-<!-- @TODO - API integration with this and the index page:
-   title, audio_url, id, summary, description, episode number, published_at, duration
-    convert duration from seconds to minutes
--->
+
 <section class='flex flex-col justify-center items-center pt-24'>
   <div class='section-content mb-6'>
     <h2 class='text-center'>{{ .Title }}</h2>
     <hr class='divider'>
     <!-- Buzzsprout Player -->
-    <div id="buzzsprout-player-7885669"></div>
-    <script src="https://www.buzzsprout.com/1214327/7885669-my-first-blog-built-from-scratch-kind-of.js?container_id=buzzsprout-player-7885669&player=small" type="text/javascript" charset="utf-8"></script> 
+    <div id="buzzsprout-player-{{ .Params.id }}"></div>
+    <script src="https://www.buzzsprout.com/1214327/{{ .Params.audio_url }}.js?container_id=buzzsprout-player-{{ .Params.id }}&player=small" type="text/javascript" charset="utf-8"></script> 
   </div>
 </section>
 
-<section class="flex flex-col bg-pink dark:bg-pink-dark w-full mb-8">
+<section class="flex flex-col bg-white dark:bg-black dark:text-white w-full mb-8">
   <div class="tabset section-content">
-    <input class=" block absolute -left-full opacity-0" type="radio" name="tabset" id="show-notes" hidden="" aria-hidden="true" checked="">
-    <input class=" block absolute -left-full  opacity-0" type="radio" name="tabset" id="transcript" hidden="" aria-hidden="true">
+    <input class="block absolute -left-full opacity-0" type="radio" name="tabset" id="show-notes" hidden="" checked="">
+    <input class="block absolute -left-full  opacity-0" type="radio" name="tabset" id="transcript" hidden="">
     <ul class="relative z-40 list-none flex justify-around -mb-1" hidden="" aria-hidden="true">
       <li><label class="inline-block text-lg pt-1 px-5 font-display font-bold" for="show-notes">Show Notes</label></li>
       <li><label class="inline-block text-lg pt-1 px-5 font-display font-bold" for="transcript">Transcript</label></li>
@@ -24,6 +21,7 @@
     <div class="border-grey border-t relative pb-4">
       <section>
         <h3>Show Notes</h3>
+        {{ .Params.showNotes | safeHTML }}
       </section>
       <section>
         <h3>Transcript</h3>
